@@ -12,19 +12,66 @@
 <body>
 
 <div class="container mt-3">
-  <h2>Online Reservation System</h2><br>
+  <h2>Register Event</h2><br>
   <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link" href="index.html">Tickets booking</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="event1.html">Event#1</a>
+      <a class="nav-link active" href="event1.html">The event is opening this month</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="event2.html">Event#2</a>
+      <a class="nav-link" href="event2.html">The event is opening next month</a>
     </li>
   </ul>
-  
+
+			<br><img src="images/Toru.png" ALIGN = "top" ALIGN = "LEFT"  height = 300 width = 645 border=5> 
+			<img src="images/sport.jpg"  ALIGN = "right" height = 300 width = 645 border=5 /> </br>
+	
+			
+  <form action="#" method="post" onsubmit="return validateForm()">
+    <div class="mb-3 mt-3">
+        <label for="nid" class="form-label">National ID<span style="color:red">*</span></label>
+        <input type="text" class="form-control" id="nid" name="nid"/>
+    </div>
+    <div class="mb-3 mt-3" >
+        <label for="fname" class="form-label">First Name<span style="color:red">*</span></label>
+        <input type="text" class="form-control" id="fname required"  name="fname" required/>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="lname" class="form-label">Last Name<span style="color:red">*</span></label>
+        <input type="text" class="form-control" id="lname required"  name="lname" required/>
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Gender<span style="color:red">*</span></label>&nbsp;&nbsp;
+        <input type="radio" class="form-check-input" id="gender1" name="genderRad " value="1" checked>&nbsp; Male &nbsp;&nbsp;
+		<input type="radio" class="form-check-input" id="gender2" name="genderRad " value="2">&nbsp; Female
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="event" class="form-label">Event<span style="color:red">*</span></label>
+        <select class="form-select" id="event" name="event">
+		  <option value="1">game tournament</option>
+		  <option value="2">Sport ancient</option>
+
+		</select>
+    </div>
+	<div class="mb-3 mt-3">
+        <label for="fname" class="form-label">Phone number<span style="color:red">*</span></label>
+        <input type="text" class="form-control" id="fname required"  name="fname" required/>
+    </div>
+	<div class="mb-3 mt-3">
+        <label class="form-label">SMS notification<span style="color:red">*</span></label>&nbsp;&nbsp;
+        <input type="radio" class="form-check-input" id="collectRad1" name="collectRad" value="1" checked>&nbsp; Yes,right &nbsp;&nbsp;
+		<input type="radio" class="form-check-input" id="collectRad2" name="collectRad" value="2">&nbsp; No,dont send notification
+    </div>
+	
+    <button type="submit" class="btn btn-primary">Register</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+</form><br><br>
+</div>
+	 
+</body>
+</html>  
 </div>
 
 </body>
